@@ -27,13 +27,65 @@ https://github.com/rayvega96/ulauncher-amazon-search
 ## Available commands
 
 In the Ulauncher Amazon Search **preferences window** you can:
-- Set up your main Amazon website;
-- Enable/Disable research on every amazon website by using -*domain parameter*;
+
+- Set up your main Amazon website
+
+![screenshot](/readme_images/simple_search.png)
+
+- Enable/Disable research on every amazon website by using -*domain parameter*
+
 ![screenshot](/readme_images/location_search.png)
+
 - Enable/Disable the use of *-my profile -myorders -mymessages -mybalance* parameters;
+
 ![screenshot](/readme_images/all_fast_commands.png)
+
 - Enable/Disable FastSearch for a fast scraping of the most 5 rated results of your query.
+
 ![screenshot](/readme_images/fastsearch.png)
 
-## Possible errors
+**You can also use these commands together!**
 
+![screenshot](/readme_images/fast_commands_with_location.png)
+
+*Using profile parameters with domain research*
+
+![screenshot](/readme_images/fast_search_with_location.png)
+
+*Using FastSearch with domain research*
+
+## All website domains
+
+- -it  for Amazon Italy
+- -uk  for Amazon United Kingdom
+- -sp  for Amazon Spain
+- -nl  for Amazon Netherlands
+- -us  for Amazon United States
+- -mx  for Amazon Mexico
+- -ca  for Amazon Canada
+- -ge  for Amazon Germany
+- -fr  for Amazon France
+- -jp  for Amazon Japan
+- -br  for Amazon Brazil
+- -au  for Amaozn Australia
+- -in  for Amazon India
+- -cn  for Amazon China
+
+
+## Possible bugs and errors
+
+Since I built this extension in 3 days it can happen that you may find some bugs. You can report me and when I have time I'll try to fix them.
+
+## FAQ
+
+1.Q) Why FastSearch does not work?
+
+1.A) Sometimes too much researches may break the extension. Try to clean Ulauncher cache situated in: ``` ~\.cache\ ```
+
+2.Q) Why I constantly get 503 Error while using FastSearch?
+
+2.A) FastSearch is a webscraper function and sometimes will give you 503 error because Amazon is preventing flooding from your IP. In this case you just have to wait a bit before using it again. You can also try to increase the number of seconds for waiting a response in the extension preferences.
+
+3.Q) Why FastSearch does not always works with books?
+
+3.A) Because the scraping method used in this extension is based on normal products and not in multiple-category products like books.
