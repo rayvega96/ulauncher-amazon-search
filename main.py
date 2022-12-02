@@ -241,7 +241,7 @@ class KeywordQueryEventListener(EventListener):
             items.append(ExtensionResultItem(icon=f'images/balance.ico', name="My Balance", description=website+"gp/css/gc/balance", on_enter=OpenUrlAction(website+"gp/css/gc/balance"), highlightable=False))
 
         elif not anything_wrong:
-            items.append(ExtensionResultItem(icon=f'images/{description or "icon"}.ico', name=str(argument), description=website+str(argument).rstrip("."), on_enter=OpenUrlAction(website+str(argument).rstrip(".")), highlightable=False))
+            items.append(ExtensionResultItem(icon=f'images/{description or "icon"}.ico', name=str(argument), description=website+str(argument).rstrip(".").replace(" ","+"), on_enter=OpenUrlAction(website+str(argument).rstrip(".")), highlightable=False))
         
 
 
