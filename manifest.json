@@ -2,7 +2,7 @@
     "required_api_version": "^2.0.0",
     "name": "Amazon Search",
     "description": "This extension provides you a fast query search on your favorite amazon website.",
-    "developer_name": "Rain",
+    "developer_name": "Francesco Emanuele Conti (rayvega96)",
     "icon": "images/icon.ico",
     "options": {
       "query_debounce": 0.05
@@ -35,7 +35,7 @@
         "id": "multiamazon",
         "type": "select",
         "name": "Enable all amazon websites",
-        "description": "Search on a specific amazon website by using -*domain* parameter. Example: \"amz -us Xbox series x\"",
+        "description": "Search on a specific amazon website by using -*dom* parameter. Check github documentation for the domains list.",
         "default_value": "No",
         "options": [
           {"value": "Yes", "text": "Yes"},
